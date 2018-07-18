@@ -1,0 +1,188 @@
+.carousel-indicators li{
+    font-size: 1em;
+    color: lightgray;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+    cursor: pointer;
+    display: inline-block;
+    height: 30px;
+    width: 20px;
+    text-indent: 0px;
+    background-color: transparent;
+}
+
+.carousel-indicators li.active{
+    color: white;
+}
+
+.carousel-indicators{
+    bottom: 0px;
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Customizing CSS Properties of Carousel Controls */
+a.carousel-control-prev, a.carousel-control-next{
+    font-size: 3em;
+    color: lightgray;
+}
+
+a.carousel-control-prev:hover, a.carousel-control-next:hover{
+    color: white;
+}
+
+a.carousel-control-prev{
+    left: -75px;
+}
+
+a.carousel-control-next{
+    right: -75px;
+}
+
+/* Customizing CSS Properties of Textbox Caption */
+.carousel-caption{
+    background-color: rgb(50,50,50,0.7);
+}
+
+/* Customizing CSS Properties of Jumbotron Controls - Adding Background Images and Positioning Containers */
+.jumbotron
+{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+    height: 60vh;
+    position: relative;
+}
+
+.jumbotron .container{
+    position: relative;
+    padding-top: 20px;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Necessary when animating elements using jQuery effects */
+.jumbotron .container h2, .jumbotron .container p, .jumbotron .container a{
+    display: none;
+}
+
+/* Styling elements so that it doesnt look lame */
+#carouselarea{
+    background-color: #B62F41;
+    padding-top: 100px;
+    margin-bottom: 200px;
+    color: white;
+}
+
+#carouselarea footer{
+    color: white;
+}
+
+#carouselarea blockquote{
+    margin-bottom: 75px;
+}
+
+nav.navbar{
+    z-index: 999;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+nav{
+    z-index: 999;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
+nav .nav-link:hover{
+    border-top: 3px solid #000000;
+}
+
+    nav .navbar-brand{
+    color: darkslategray;
+    font-size: 18px;
+}
+
+
+/* Positioning the button group */
+
+.btn-group-vertical{
+    width: 100%;
+    padding: 5px;
+}
+
+.btn-group-vertical a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12pt;
+    font-family: verdana;
+}
+
+/* Styling the buttons and their different states */
+
+.btn:focus, .btn:active {
+    box-shadow: 0 0 0 1px darkgrey;
+}
+
+.btn-outline-light{
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-light:hover{
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+/* Miscelaneous styling for a sidebar on landing page - notice that elements are positioned with an absolute value, while the z-index ensures that these appear on top of other elements on the page, without affecting their flow */
+
+#settings{
+    font-size: 1em;
+    position: inherit;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1000;
+}
+
+#settings:hover{
+    color: darkgray;
+    background-color: white;
+}
+
+#sidebar{
+    background-color: rgb(50,50,50);
+    width: 300px;
+    position: absolute;
+    z-index: 1000;
+}
+
+#close{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+#close:hover{
+    color: white;
+}
+
+.list-group-item{
+    background-color: black;
+    color: white;
+}
+
+/*Override active class with more specific selector*/
+.list-group .active{
+    background-color: grey;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
